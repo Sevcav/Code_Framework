@@ -33,10 +33,10 @@ function testCube() {
 //        What separates the values
 // Output: A string of the numbers separated
 //         by line breaks '\n'
-function createNumberString(startNumber, howMany, separator) {
-    if (!separator) { // default to \n
-        separator = '\n';    
-    }
+function createNumberString(startNumber, howMany, separator = '\n') {
+    //if (!separator) { // default to \n
+        //separator = '\n';    
+    
     let result = "";
     let loopCounter = startNumber;
     let maxNumber = startNumber + howMany;
